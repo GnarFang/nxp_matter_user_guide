@@ -3,7 +3,7 @@ We highly recommend you read the docs before starting your development journey
 
 ## Example Main Class for new Mods
 
-```c#
+```csharp
 using Dungeon_Adventure_Gang.Modding;
 
 namespace Example_Mod
