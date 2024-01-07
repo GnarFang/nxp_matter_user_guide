@@ -1,10 +1,11 @@
 # Dungeon Adventure Gang Modding API Documentation
 We highly recommend you read the docs before starting your development journey
 
+## Example Main Class for new Mods
+
 ```c#
 using Dungeon_Adventure_Gang.Modding;
 
-## Example Main Class for new Mods
 namespace Example_Mod
 {
 	public class Example_Mod : Mod
