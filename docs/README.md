@@ -13,7 +13,7 @@ If you want to write the documentation in the `./docs` subdirectory, you can use
 ```bash
 docsify init ./docs
 ```
-
+as
 ## Writing content
 
 After the `init` is complete, you can see the file list in the `./docs` subdirectory.
