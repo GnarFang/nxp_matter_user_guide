@@ -57,7 +57,7 @@ function versionedDocsPlugin(hook, vm) {
         if (nameEl) {
             console.log(versions.find((v) => v.folder === versionPath));
             var versionLabel = versions.find((v) => v.folder === versionPath).label;
-            nameEl.innerHTML += ` <small>${versionLabel}</small>`;
+            nameEl.innerHTML += ` <small id="vlabel">${versionLabel}</small>`;
             nameEl.parentNode.insertBefore(selector, nameEl.nextElementSibling);
         }
         return selector;
@@ -84,7 +84,8 @@ function versionedDocsPlugin(hook, vm) {
 
           var nameEl = document.querySelector('.app-name');
             if (nameEl) {
-                nameEl.innerHTML += ` <small>${versionLabel}</small>`;
+                document.getElementById("vlabel").remove();
+                nameEl.innerHTML += ` <small id="vlabel">${versionLabel}</small>`;
                 nameEl.parentNode.insertBefore(selector, nameEl.nextElementSibling);
             }
           next(updatedHtml);
