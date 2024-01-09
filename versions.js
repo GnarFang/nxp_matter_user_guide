@@ -105,7 +105,10 @@ function versionedDocsPlugin(hook, vm) {
 window.$docsify.plugins = [].concat(versionedDocsPlugin, window.$docsify.plugins);
 
 (function() {
-    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+    if (window.$docsify.home === undefined)
+        window.$docsify.home = "/";
+    
+    if (window.location.pathname === window.$docsify.home || window.location.pathname === '/index.html') {
       var defaultVersion = window.$docsify.versions.find((v) => v.default).folder;
       window.location.replace('/' + defaultVersion + '/');
     }
