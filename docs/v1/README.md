@@ -1,4 +1,5 @@
 # Dungeon Adventure Gang Modding API Documentation {{versionLabel}}
+
 We highly recommend you read the docs before starting your development journey
 
 ## Example Main Class for new Mods
