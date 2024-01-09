@@ -85,8 +85,7 @@ function versionedDocsPlugin(hook, vm) {
             if (nameEl) {
                 if (document.getElementById("vlabel") != null)
                     document.getElementById("vlabel").remove();
-                nameEl.innerHTML += ` <small id="vlabel">${versionLabel}</small>`;
-                nameEl.parentNode.insertBefore(selector, nameEl.nextElementSibling);
+                nameEl.innerHTML += ` <small id="vlabael">${versionLabel}</small>`;
             }
           next(updatedHtml);
         } else {
