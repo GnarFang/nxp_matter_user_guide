@@ -53,12 +53,6 @@ function versionedDocsPlugin(hook, vm) {
         label.textContent = labelText;
         selector.insertBefore(label, selector.querySelector('select'));
         
-        var nameEl = document.querySelector('.app-name');
-        if (nameEl) {
-            var versionLabel = versions.find((v) => v.folder === versionPath).label;
-            nameEl.innerHTML += ` <small id="vlabel">${versionLabel}</small>`;
-            nameEl.parentNode.insertBefore(selector, nameEl.nextElementSibling);
-        }
         return selector;
     }
  
@@ -85,7 +79,7 @@ function versionedDocsPlugin(hook, vm) {
             if (nameEl) {
                 if (document.getElementById("vlabel") != null)
                     document.getElementById("vlabel").remove();
-                nameEl.innerHTML += ` <small id="vlabael">${versionLabel}</small>`;
+                nameEl.innerHTML += ` <small id="vlabal">${versionLabel}</small>`;
             }
           next(updatedHtml);
         } else {
