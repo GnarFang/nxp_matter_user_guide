@@ -17,8 +17,8 @@ function versionedDocsPlugin(hook, vm) {
         if (newPath === '' || newPath === 'README.md') {
           newPath = '/';
         }
-        window.location.href = '/' + version + newPath;
-        vm.basePath = '/' + version + newPath;
+        window.location.href = window.$docsify.home + '#/' + version + newPath;
+        vm.basePath = window.$docsify.home + '#/' + version + newPath;
     }
 
     function initVersionSelector() {
@@ -106,8 +106,8 @@ window.$docsify.plugins = [].concat(versionedDocsPlugin, window.$docsify.plugins
 
 (function() {
     if (window.$docsify.home === undefined)
-        window.$docsify.home = "/";
-
+        window.$docsify.home = "/#/";
+    
     if(!window.$docsify.home.endsWith("/"))
         window.$docsify.home += "/";
     
