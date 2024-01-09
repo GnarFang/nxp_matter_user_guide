@@ -79,13 +79,6 @@ function versionedDocsPlugin(hook, vm) {
           var versionLabel = version.label;
           var updatedHtml = html.replace(/{{versionLabel}}/g, versionLabel);
 
-          var nameEl = document.querySelector('.app-name');
-            if (nameEl) {
-                if (document.getElementById("vlabel") != null)
-                    document.getElementById("vlabel").remove();
-                nameEl.innerHTML += ` <small id="vlabel">${versionLabel}</small>`;
-            }
-            console.log(versionLabel);
           next(updatedHtml);
         } else {
           next(html);
@@ -103,6 +96,12 @@ function versionedDocsPlugin(hook, vm) {
           if (cover) {
             cover.innerHTML = cover.innerHTML.replace(/{{versionLabel}}/g, versionLabel);
           }
+            var nameEl = document.querySelector('.app-name');
+            if (nameEl) {
+                if (document.getElementById("vlabel") != null)
+                    document.getElementById("vlabel").remove();
+                nameEl.innerHTML += ` <small id="vlabel">${versionLabel}</small>`;
+            }
         }
       });
 }
