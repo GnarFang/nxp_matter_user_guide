@@ -39,8 +39,8 @@ function versionedDocsPlugin(hook, vm) {
         `;
         
         // Adding event listener
-        var splits = window.location.hash.split("?");
-        var versionPath = splits[splits.length - 1].split("/")[1] || defaultVersion;
+        var splits = window.location.hash.split("?id=")[0];
+        var versionPath = splits.split("/")[1] || defaultVersion;
         selector.querySelector('select').value = versionPath;
         selector.querySelector('select').addEventListener('change', function () {
             updateVersion(this.value);
