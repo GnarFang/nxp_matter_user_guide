@@ -112,6 +112,7 @@ window.$docsify.plugins = [].concat(versionedDocsPlugin, window.$docsify.plugins
         window.$docsify.home += "/";
     
     if (window.location.pathname === window.$docsify.home || window.location.pathname === window.$docsify.home + 'index.html') {
+        console.log("HI " + window.location.pathname);
       var defaultVersion = window.$docsify.versions.find((v) => v.default).folder;
       window.location.replace(window.$docsify.home + defaultVersion + '/');
     }
