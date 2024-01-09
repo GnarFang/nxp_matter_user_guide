@@ -81,6 +81,12 @@ function versionedDocsPlugin(hook, vm) {
         if (version) {
           var versionLabel = version.label;
           var updatedHtml = html.replace(/{{versionLabel}}/g, versionLabel);
+
+          var nameEl = document.querySelector('.app-name');
+            if (nameEl) {
+                nameEl.innerHTML += ` <small>${versionLabel}</small>`;
+                nameEl.parentNode.insertBefore(selector, nameEl.nextElementSibling);
+            }
           next(updatedHtml);
         } else {
           next(html);
