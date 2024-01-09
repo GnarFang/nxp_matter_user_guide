@@ -107,9 +107,12 @@ window.$docsify.plugins = [].concat(versionedDocsPlugin, window.$docsify.plugins
 (function() {
     if (window.$docsify.home === undefined)
         window.$docsify.home = "/";
+
+    if(!window.$docsify.home.endsWith("/"))
+        window.$docsify.home += "/";
     
-    if (window.location.pathname === window.$docsify.home || window.location.pathname === '/index.html') {
+    if (window.location.pathname === window.$docsify.home || window.location.pathname === window.$docsify.home + 'index.html') {
       var defaultVersion = window.$docsify.versions.find((v) => v.default).folder;
-      window.location.replace('/' + defaultVersion + '/');
+      window.location.replace(window.$docsify.home + defaultVersion + '/');
     }
   })();
