@@ -3,7 +3,6 @@
       hook.ready(function() {
         applyColors();
         changeLangText();
-          alert(document.getElementsByClassName("version-selector")[0])
       })
     };
 
