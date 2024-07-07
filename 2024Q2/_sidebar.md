@@ -1,0 +1,22 @@
+<!-- docs/_sidebar.md -->
+
+
+- [首页](/)
+- [Controller](/)
+  - [MCU Hosted	](/)
+    - [i.MXRT](/)
+  - [MPU Hosted](/)
+    - [i.MX6 Series](/)
+- [OTBR](/)
+  - [MCU Hosted	](/)
+  - [MPU Hosted](/)
+    - [i.MX6 Series](/)
+    - [i.MX8 Series](/)
+        - [i.MX8MM OTBR Quick Start](OTBR\MPU_Hosted\i.MX8_Series\i.MX8MM_OTBR_Quick_Start.md)
+        - [i.MX8ULP OTBR Quick Start](OTBR\MPU_Hosted\i.MX8_Series\i.MX8ULP_OTBR_Quick_Start.md)
+    - [i.MX9 Series](/)
+- [Devices](/)
+  - [Component A](/)
+  - [Component B](/)
+- [Security](/)
+- [Update Log](../Change_Log.md)
