@@ -19,6 +19,7 @@ npm i docsify-cli -g
 ```sh
 cd nxp_matter_user_guide
 docsify serve
+# browser input http://localhost:3000
 ```
 
 # Ubuntu
