@@ -1,3 +1,3 @@
-# INTRODUCTION SDSDS  {{versionLabel}}
+# INTRODUCTION
 
 # NXP solutions

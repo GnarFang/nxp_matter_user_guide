@@ -1,7 +1,7 @@
 <!-- docs/_sidebar.md -->
 
 
-- [首页](/)
+- [HOME](/)
 - [Controller](/)
   - [MCU Hosted	](/)
     - [i.MXRT](/)
@@ -18,5 +18,6 @@
 - [Devices](/)
   - [Component A](/)
   - [Component B](/)
+  - [Matter-Zigbee Bridge](/2024Q2/imx93-Matter-Zigbee-bridge.md)
 - [Security](/)
 - [Update Log](../Change_Log.md)

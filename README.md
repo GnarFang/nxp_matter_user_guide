@@ -16,7 +16,7 @@ npm i docsify-cli -g
 ```
 
 ## preview
-```shell
+```sh
 cd nxp_matter_user_guide
 docsify serve
 ```
@@ -44,4 +44,16 @@ npm i docsify-cli -g
 ```sh
 cd nxp_matter_user_guide
 docsify serve
+```
+### Q&A
+```sh
+Q:node:internal/fs/watchers:247
+    const error = new UVException({
+                  ^
+
+Error: ENOSPC: System limit for number of file watchers reached, watch '/home/gnar/code/matter/nxp_matter_user_guide/versions.js'
+
+solution:
+cat /proc/sys/fs/inotify/max_user_watches
+sudo sysctl fs.inotify.max_user_watches=131070
 ```

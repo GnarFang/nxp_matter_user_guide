@@ -1,7 +1,7 @@
 <!-- docs/_sidebar.md -->
 
 
-- [首页](/)
+- [HOME](/)
 - [Controller](/)
   - [MCU Hosted	](/)
     - [i.MXRT](/)
